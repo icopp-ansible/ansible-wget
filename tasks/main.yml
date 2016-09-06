@@ -1,0 +1,6 @@
+---
+- name: Install the latest stable GNU Wget via Homebrew
+  package:
+    name: wget
+    state: latest
+  when: ansible_os_family == "Darwin"
